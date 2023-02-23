@@ -1,0 +1,8 @@
+{
+    "Name":"TV",
+    "Price":45000.45,
+    "Qty":2,
+    "Total":function(){
+        
+    }
+}

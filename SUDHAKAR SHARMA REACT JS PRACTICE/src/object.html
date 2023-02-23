@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        var tv ={
+            "Name":"Samsung Tv",
+            "Price":45000.45,
+            "City":["Delhi","Hyd"],
+            "Rating":{Rate:4.2,Count:56000},
+            "Qty":2,
+            "Total":function(){
+                return this.Qty * this.Price;
+            }
+        }
+
+        // document.write("Name "+tv.Name+" Product Price Is "+tv.Price+ " This Product Available In A "+tv.City[0]+ " And Product Rating Is "+tv.Rating.Rate + " And Count "+tv.Rating.count+" Total Amount Is "+tv.Total());
+        document.write(`Name ${tv.Name}\nPrice ${tv.Price}\nCity ${tv.City[1]}\nAnd My Product Rating Is ${tv.Rating.Rate}\nAnd Roduct Count Is ${tv.Rating.Count}\nProduct Total Is ${tv.Total()}`);
+    </script>
+</body>
+</html>
